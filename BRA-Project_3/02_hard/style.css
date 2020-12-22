@@ -1,6 +1,5 @@
 body {
   background-color: #990909;
-  width: 1145px;
   font-size: 18px;
   color: #fff;
 }
@@ -21,6 +20,10 @@ nav {
   color: #fff;
 }
 
+.nav {
+  display: flex;
+}
+
 ul {
   margin-block-start: 0px;
   margin-block-end: 0px;
@@ -29,11 +32,12 @@ ul {
 }
 
 .nav li {
-  display: inline-block;
-  width: 180px;
-  margin: 0 50px;
-  background-size: 100%;
+  margin: 0 00px;
+  flex-basis: 180px;
+  flex-grow: 1;
+  background-size: 180px;
   background-repeat: no-repeat;
+  background-position: top;
   padding-top: 140px;
   text-align: center;
 }
@@ -54,13 +58,18 @@ ul {
   background-image: url(./images/img03.jpg);
 }
 
-.sidebar-right {
-  display: block;
+main {
+  display: flex;
+  margin-bottom: 0px;
+}
+
+.sidebar-left {
   background-color: #7d0909;
-  width: 220px;
+  min-width: 230px;
+  max-width: 230px;
+  flex-grow: 0;
   height: 350px;
   margin: 2px;
-  float: left;
 }
 
 .link {
@@ -69,15 +78,14 @@ ul {
   line-height: 2.2;
 }
 
-.sidebar-left {
-  display: block;
+.sidebar-right {
   background-color: #e3dddd;
   color: #000;
-  width: 175px;
+  min-width: 175px;
+  max-width: 175px;
+  flex-grow: 0;
   height: 350px;
   margin-top: 2px;
-  margin-bottom: 20px;
-  float: right;
 }
 
 h2 {
@@ -108,10 +116,6 @@ hr {
 
 article div {
   margin-top: 25px;
-}
-
-.footer {
-  margin-top: 92px;
 }
 
 .copyright {
