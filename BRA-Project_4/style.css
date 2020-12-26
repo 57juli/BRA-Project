@@ -59,23 +59,21 @@ body {
 }
 
 .social_icon_list {
-  width: 12%;
+  display: flex;
+  justify-content: center;
   list-style: none;
   padding-inline-start: 0;
-  margin-left: auto;
-  margin-right: auto;
   margin-block-start: 20px;
   margin-block-end: 0em;
 }
 
 .soc_icon_item {
-  display: inline-block;
-  box-sizing: border-box;
-  width: 19%;
+  margin-right: 17px;
+  margin-left: 17px;
 }
 
 .soc_icon_item:first-child {
-  margin-left: -10px;
+  margin-left: 10px;
 }
 
 .copiright {
