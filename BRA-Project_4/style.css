@@ -1,0 +1,89 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.header {
+  height: 454px;
+  padding: 108px 0 102px;
+  background-color: #202020;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+.header_panel {
+  width: 33%;
+  display: inline-block;
+  text-align: center;
+}
+
+.heder_text {
+  padding: 0 35px;
+  font-weight: 400;
+}
+
+.header_headline {
+  margin: 0 0 35px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.header_image {
+  margin-bottom: 45px;
+}
+
+.footer_panel {
+  background-color: #121116;
+  height: 420px;
+  padding: 118px 0 83px;
+  text-align: center;
+}
+
+.footer_image {
+  align-self: center;
+  margin-bottom: 40px;
+}
+
+.footer_headline_container {
+  padding: 0 0 20px;
+}
+
+.footer_headline {
+  display: inline;
+  margin: 0 0 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2pt;
+  font-weight: 500;
+  padding: 0 35px 20px;
+  border-bottom: white solid 1px;
+}
+
+.social_icon_list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-inline-start: 0;
+  margin-block-start: 20px;
+  margin-block-end: 0em;
+}
+
+.soc_icon_item {
+  margin-right: 17px;
+  margin-left: 17px;
+}
+
+.soc_icon_item:first-child {
+  margin-left: 10px;
+}
+
+.copiright {
+  color: #ffffff;
+  margin-top: 75px;
+  font-size: 11pt;
+  font-weight: 600;
+  letter-spacing: 0.5pt;
+}
+
+.blue_font {
+  color: #00c7fc;
+}
