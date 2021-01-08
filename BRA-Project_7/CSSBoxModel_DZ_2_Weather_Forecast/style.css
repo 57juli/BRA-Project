@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /*transition: all 0.1s ease-in;*/
+}
+
+:root {
+  --first: #3399cc;
+  --sec: #33cccc;
+  --third: #996699;
+  --four: #c24747;
+  --fifth: #e2674a;
+  --six: #ffcc66;
+  --seven: #99cc99;
+  --eight: #669999;
+  --nine: #cc6699;
+  --ten: #339966;
+  --eleven: #666699;
+}
+
+body {
+  background-color: #2b81ac;
+}
+
+.main-container {
+  width: 850px;
+  background-color: var(--first);
+  margin: 20px auto;
+  padding: 20px 80px 80px;
+}
+
+h1 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.wi {
+  font-size: 25px;
+  color: white;
+}
+
+ul.list {
+  list-style: none;
+  border: 2px solid white;
+  background-color: white;
+}
+
+li {
+  display: inline-block;
+  position: relative;
+  width: 25%;
+  height: 100px;
+  background-color: var(--first);
+  border: 2px solid white;
+}
+
+.item {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+div.item > span.city-name {
+  display: block;
+  font-size: 17px;
+  line-height: 2em;
+  color: white;
+}
+
+div.item span.temperature {
+  display: block;
+  font-size: 18px;
+  line-height: 2em;
+  color: white;
+  opacity: 0.7;
+}
+
+li:first-child,
+li:nth-child(9) {
+  width: 50%;
+}
+
+li:last-child {
+  width: 100%;
+}
+
+li:nth-child(2) {
+  background-color: var(--sec);
+}
+
+li:nth-child(3) {
+  background-color: var(--third);
+}
+
+li:nth-child(4) {
+  background-color: var(--four);
+}
+
+li:nth-child(5) {
+  background-color: var(--fifth);
+}
+
+li:nth-child(6) {
+  background-color: var(--six);
+}
+
+li:nth-child(7) {
+  background-color: var(--seven);
+}
+
+li:nth-child(8) {
+  background-color: var(--eight);
+}
+
+li:nth-child(9) {
+  background-color: var(--nine);
+}
+
+li:nth-child(10) {
+  background-color: var(--ten);
+}
+
+li:nth-child(11) {
+  background-color: var(--eleven);
+}
+
+li:not(:hover) {
+  opacity: 0.5;
+}
+
+.footer > p {
+  margin-top: 20px;
+  color: white;
+  font-size: 14px;
+}
