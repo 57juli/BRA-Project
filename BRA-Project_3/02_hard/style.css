@@ -63,7 +63,7 @@ main {
   margin-bottom: 0px;
 }
 
-.sidebar-left {
+.sidebar-right {
   background-color: #7d0909;
   min-width: 230px;
   max-width: 230px;
@@ -78,7 +78,7 @@ main {
   line-height: 2.2;
 }
 
-.sidebar-right {
+.sidebar-left {
   background-color: #e3dddd;
   color: #000;
   min-width: 175px;
