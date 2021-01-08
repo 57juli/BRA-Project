@@ -7,6 +7,7 @@ body {
   font-size: 17px;
   background-color: var(--mainbgcolor);
   margin: 0;
+  /*box-sizing: content-box;*/
 }
 
 :root {
@@ -33,14 +34,12 @@ body {
 
 h1 {
   font-size: 26px;
-  margin: 0;
-  width: fit-content;
+  width: max-content;
   margin: 0 auto 0;
 }
 
 h1 + p {
-  margin: 0;
-  width: fit-content;
+  width: max-content;
   margin: 0 auto 0;
 }
 
@@ -56,7 +55,7 @@ footer {
 }
 
 .footer_text {
-  width: fit-content;
+  width: max-content;
   padding: 15px 0 15px;
   margin: 0 auto 0;
   color: var(--fontcolor);
@@ -123,17 +122,25 @@ input[type="checkbox"]:checked + label:before {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
+li:hover label:hover::before {
+  top: 8px;
+}
+
 input[type="checkbox"]:not(:checked) + label::after,
 input[type="checkbox"]:checked + label::after {
   content: "";
   position: absolute;
-  top: 0.7em;
-  left: 0.9em;
+  top: 12px;
+  left: 15px;
   width: 3px;
   height: 9px;
   border-right: 4px solid #424242;
   border-bottom: 4px solid #424242;
   transform: rotate(40deg);
+}
+
+li:hover label:hover::after {
+  top: 10px;
 }
 
 input[type="checkbox"]:not(:checked) + label::after {
