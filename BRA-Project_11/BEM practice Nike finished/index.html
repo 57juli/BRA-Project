@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/0427e4904b.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>Nike</title>
+</head>
+
+<body>
+  <div class="card body__card">
+    <header class="card__header">
+      <a href="#" class="card__logo">
+        <img src="./img/logo.png" alt="logo">
+      </a>
+
+      <div class="navigator card__navigator">
+        <ul class="navigator__list">
+          <li class="navigator__list-elem navigator__list-elem_active">Lifestyle </li>
+          <li class="navigator__list-elem navigator__list-elem_active">running</li>
+          <li class="navigator__list-elem navigator__list-elem_active">football</li>
+          <li class="navigator__list-elem navigator__list-elem_active">scateboading</li>
+        </ul>
+        <button class="navigator__button">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <div class="card__container product">
+      <div class="product__images">
+        <h1 class="product__name">Huarache</h1>
+        <img class="product__photo" src="./img/main.png" alt="main">
+        <div class="product__galery">
+          <img class="galery__item" src="./img/first.png" alt="inside">
+          <img class="galery__item" src="./img/second.png" alt="outside">
+          <img class="galery__item" src="./img/third.png" alt="behind">
+        </div>
+      </div>
+      <div class="product__about">
+        <span class="product__label">New</span>
+        <h2 class="product__slogo">The <a href="#" class="product__category-link">running</a> has just begun</h2>
+        <div class="product__rating rating">
+          <ul class="rating">
+            <li class="rating__star">&#9733</li>
+            <li class="rating__star">&#9733</li>
+            <li class="rating__star">&#9733</li>
+            <li class="rating__star">&#9733</li>
+            <li class="rating__star">&#9733</li>
+          </ul>
+          <h3 class="product__name-rate">Huarache</h3>
+        </div>
+        <span class="product__price">$ 200</span>
+        <div class="product__size">
+          <span class="size__label">Size</span>
+          <ul class="size__list">
+            <li class="size__value">7</li>
+            <li class="size__value">8</li>
+            <li class="size__value">9</li>
+            <li class="size__value">10</li>
+            <li class="size__value">11</li>
+          </ul>
+        </div>
+        <button class="product__button product__button_buy">
+          Add to cart
+        </button>
+        <button class="product__button">
+          Wishlist
+        </button>
+      </div>
+      <span class="product__close">&#9587;</span>
+    </div>
+
+  </div>
+</body>
+
+</html>
