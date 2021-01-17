@@ -16,8 +16,8 @@
   width: 800px;
   height: 600px;
   background-color: white;
-  background-image: url(../img/yellow-dots.png), url(../img/blue-dots.png),
-    url(../img/strips.png);
+  background-image: url(./img/yellow-dots.png), url(./img/blue-dots.png),
+    url(./img/strips.png);
   background-position: 40% 52%;
   display: flex;
   margin: auto;
