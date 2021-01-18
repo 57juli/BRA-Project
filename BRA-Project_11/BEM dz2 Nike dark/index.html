@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>NikeSB</title>
+</head>
+
+<body>
+  <div class="product">
+    <div class="product__card card">
+      <div class="card__images">
+        <img class="card__logo" src="./img/logo.png" alt="logo">
+        <img class="card__product-photo" src="./img/product.png" alt="product">
+        <ul class="card__color-change color-change">
+          <li class="color-change__item">
+            <a href="#" class="color-change__link color-change__link--black"></a>
+          </li>
+          <li class="color-change__item">
+            <a href="#" class="color-change__link color-change__link--white"></a>
+          </li>
+          <li class="color-change__item">
+            <a href="#" class="color-change__link color-change__link--red"></a>
+          </li>
+          <li class="color-change__item">
+            <a href="#" class="color-change__link color-change__link--blue"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="product__about">
+        <h2 class="about__title">Nike SB Stefan Janoski Max</h2>
+        <h3 class="about__description">Unisex Skateboarding Shoe</h3>
+
+        <ul class="about__rating rating">
+          <li class="rating__star">&#9733</li>
+          <li class="rating__star">&#9733</li>
+          <li class="rating__star">&#9733</li>
+          <li class="rating__star">&#9733</li>
+          <li class="rating__star">&#9733</li>
+        </ul>
+        <div class="about__select-lists-wrapper">
+          <div class="about__size">
+            <label class="size__label" for="size">Size</label>
+            <select class="size__list select-list" id="size" name="size">
+              <option value selected disabled hidden>Size</option>
+              <option class="select-list__option" value="39">39</option>
+              <option class="select-list__option" value="40">40</option>
+              <option class="select-list__option" value="41">41</option>
+              <option class="select-list__option" value="42">42</option>
+              <option class="select-list__option" value="43">43</option>
+            </select>
+          </div>
+          <div class="about__qty">
+            <label class="qty__label" for="qty">Qty</label>
+            <select class="qty__list select-list" id="qty" name="qty">
+              <option value selected disabled hidden>Qty</option>
+              <option class="select-list__option" value="1">1</option>
+              <option class="select-list__option" value="2">2</option>
+              <option class="select-list__option" value="3">3</option>
+            </select>
+          </div>
+        </div>
+
+        <button class="about__buy-botton">Add to cart</button>
+
+      </div>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>
