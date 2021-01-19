@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize-opentype.css/0.2.3/normalize-opentype.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <title>CC</title>
+</head>
+
+<body>
+    <div class="modal page__modal">
+        <div class="modal__header header">
+            <div class="header__info">
+                <h2 class="header__fio">Harold Finch</h2>
+                <span class="header__total">Your tatal</span>
+            </div>
+            <div class="header__price">
+                88
+            </div>
+        </div>
+        <form action="#" method="POST" class="form">
+            <div class="input-grup">
+                <label for="cc_number">
+                    Credit card number
+                </label>
+                <input type="text" id="cc_number" name="cc_number" pattern="[0-9]{13,16}"
+                    data-inputmask="0000 0000 0000 0000">
+            </div>
+            <div class="input-grup">
+                <label>Expiration date</label>
+                <div class="form__date date">
+
+                    <select name="month" id="month">
+                        <option value="" selected disabled hidden>select month</option>
+                        <option value="01">JAN</option>
+                        <option value="02">FEB</option>
+                        <option value="03">MAR</option>
+                        <option value="04">APR</option>
+                    </select>
+
+                    <select name="year" id="year">
+                        <option value="" selected disabled hidden>select year</option>
+                        <option value="1990">1990</option>
+                        <option value="1991">1991</option>
+                        <option value="1992">1992</option>
+                        <option value="1993">1993</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-grup">
+                <label for="cvv">CVV</label>
+                <div class="form__cvv cvv">
+                    <input type="text" minlength="3" maxlength="4" id="cvv">
+                    <div class="cvv__help">
+                        3 or 4 digits - <a href="#">view example</a>
+                    </div>
+                </div>
+            </div>
+            <button class="form__submit-button" type="submit">Pay</button>
+            <button class="form__cancel-button" type="submit" formaction="./index.html">Cancel order</button>
+
+        </form>
+
+    </div>
+</body>
+
+</html>
