@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  /*transition: all 0.1s ease-in;*/
+}
+
+:root {
+  --background: #e2e7ec;
+  --h2color: #000000;
+  --datecol: #818181;
+  --itemcol: #ffffff;
+}
+
+body {
+  background-color: var(--background);
+  font-family: "Raleway", sans-serif;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 75%;
+  margin: 30px auto;
+}
+
+div.item {
+  width: 32%;
+  min-height: 520px;
+  background-color: var(--itemcol);
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+div.item:first-child {
+  width: 66%;
+  max-width: none;
+  position: relative;
+  overflow: hidden;
+}
+
+div.item:first-child img {
+  width: 100%;
+  /*height: auto;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div.item:first-child > div.content {
+  position: absolute;
+  left: 2em;
+  bottom: 2em;
+  height: auto;
+  width: 50%;
+  color: white;
+}
+
+div.item:first-child > div.content h2 {
+  color: white;
+  font-size: 23px;
+  margin-bottom: 0;
+}
+
+div.item:nth-child(4) > div.content > .date {
+  font-size: 0;
+}
+
+.content {
+  display: block;
+  height: 53%;
+  padding: 20px;
+  position: relative;
+}
+
+.content h2 {
+  color: var(--h2color);
+  text-transform: uppercase;
+  font-size: 21px;
+  margin-bottom: 1.5em;
+}
+
+.content span.date {
+  color: var(--datecol);
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+div.image {
+  height: 47%;
+  overflow: hidden;
+  position: relative;
+}
+
+div.image img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.profile-pick {
+  position: absolute;
+  bottom: 20px;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  margin: 50px auto 0 auto;
+}
+.loading span {
+  padding-left: 10px;
+  font-size: 10px;
+  color: #99a5b0;
+  text-transform: uppercase;
+}
